@@ -1,4 +1,4 @@
--name: Play variable
+- name: Play variable
   hosts: localhost
 
   vars:
