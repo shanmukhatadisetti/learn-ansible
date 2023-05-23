@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     URL: play.example.com
-  task:
+  tasks:
     -name: print play variable
     ansible.builtin.debug:
       msg: URL = {{ URL }}
