@@ -1,3 +1,3 @@
-- name: print mongodb
-  debug:
-    msg: mongodb
+ - name: print mongodb
+   debug:
+     msg: mongodb
