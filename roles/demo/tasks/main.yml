@@ -1,4 +1,5 @@
 - name: print URL
-  URL: task level variable
+  vars:
+    URL: task level variable
   ansible.builtin.debug:
     msg: URL = {{ URL }}
