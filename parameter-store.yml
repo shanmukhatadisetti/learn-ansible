@@ -3,4 +3,4 @@
   tasks:
     - name: print test1 value
       ansible.builtin.debug:
-        msg: "{{ looup('amazon.aws.aws_ssm', 'test1') }}"
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'test1') }}"
