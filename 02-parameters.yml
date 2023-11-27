@@ -1,5 +1,13 @@
-- name: printing demo parameters
-  hosts: all
+#- name: printing demo parameters
+#  hosts: all
+#  become: yes
+#  roles:
+#    - demo
+
+- name: demo parameters
+  hosts: localhost
   become: yes
-  roles:
-    - demo
+  tasks:
+    - name: printing parameters from parameters store
+      ansible.builtin.debug:
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1' ) }}"
