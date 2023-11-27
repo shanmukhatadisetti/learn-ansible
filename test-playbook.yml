@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: test
-      ansible.biultin.debug:
+      ansible.builtin.debug:
         msg: "{{ p_name }}"
 
 #    - name: install nginx
