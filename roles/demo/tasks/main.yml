@@ -1,0 +1,8 @@
+- name: print demo role
+  ansible.builtin.debug:
+    msg: "hello"
+
+- name: copy template
+  ansible.builtin.template:
+    src: test.text
+    dest: /tmp/test.text

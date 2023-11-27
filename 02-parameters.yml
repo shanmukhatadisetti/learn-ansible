@@ -1,0 +1,5 @@
+- name: printing demo parameters
+  hostname: all
+  become: yes
+  roles:
+    - demo
