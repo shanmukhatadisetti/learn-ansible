@@ -1,14 +1,19 @@
 - name: test-playbook
-  hosts: all
+  hosts: localhost
   become: yes
   tasks:
-    - name: install nginx
-      ansible.builtin.dnf:
-        name: nginx
-        state: installed
+    - name: test
+      ansible.biultin.debug:
+        msg: "{{ p_name }}"
 
-    - name: start nginx
-      ansible.builtin.systemd:
-        name: nginx
-        state: started
-        enabled: yes
+#    - name: install nginx
+#      ansible.builtin.dnf:
+#        name: nginx
+#        state: installed
+#
+#    - name: start nginx
+#      ansible.builtin.systemd:
+#        name: nginx
+#        state: started
+#        enabled: yes
+
