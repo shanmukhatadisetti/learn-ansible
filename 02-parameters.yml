@@ -4,10 +4,16 @@
 #  roles:
 #    - demo
 
-- name: demo parameters
-  hosts: localhost
+#- name: demo parameters
+#  hosts: localhost
+#  become: yes
+#  tasks:
+#    - name: printing parameters from parameters store
+#      ansible.builtin.debug:
+#        msg: "{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1' ) }}"
+
+- name: demo expense app
+  hosts: all
   become: yes
-  tasks:
-    - name: printing parameters from parameters store
-      ansible.builtin.debug:
-        msg: "{{ lookup('amazon.aws.aws_ssm', 'test', region='us-east-1' ) }}"
+  roles:
+    - demo
