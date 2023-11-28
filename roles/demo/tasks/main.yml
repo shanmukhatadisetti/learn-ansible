@@ -14,7 +14,7 @@
 
 - name: copying expense config file in Nginx
   ansible.builtin.template:
-    src: expense.conf
+    src: test.text
     dest: /etc/nginx/default.d/expense.conf
 
 - name: Removing app content directory
