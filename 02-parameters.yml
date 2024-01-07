@@ -1,8 +1,8 @@
-- name: printing demo parameters
-  hosts: all
-  become: yes
-  roles:
-    - demo
+#- name: printing demo parameters
+#  hosts: all
+#  become: yes
+#  roles:
+#    - demo
 
 #- name: demo parameters
 #  hosts: localhost
