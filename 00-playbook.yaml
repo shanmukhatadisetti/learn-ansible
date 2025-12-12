@@ -1,0 +1,5 @@
+- name: playbook
+  hosts: frontend
+  tasks:
+   - name: ping the server 
+     ansuble.builtin.ping:
