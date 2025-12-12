@@ -3,8 +3,8 @@
   connection: local
   vars:
     greetings: hello from playbook
-  vars_files:
-    - greetings-file.yaml
+  # vars_files:
+  #   - greetings-file.yaml
   vars_prompt:
   - name: greetings
     prompt: say greetings
