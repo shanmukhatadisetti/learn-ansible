@@ -3,6 +3,6 @@
   conection: local
   become: yes
   tasks:
-  - name: printing message:
+  - name: printing message
     ansible.builtin.debug:
     msg: helloworld
