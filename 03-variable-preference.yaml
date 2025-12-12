@@ -11,5 +11,7 @@
     private: false
   tasks:
   - name: greeting 
+    vars:
+      greetings: greetings from task
     ansible.builtin.debug:
       msg: "{{ greetings }}"
