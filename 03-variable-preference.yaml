@@ -5,10 +5,10 @@
     greetings: hello from playbook
   # vars_files:
   #   - greetings-file.yaml
-  vars_prompt:
-  - name: greetings
-    prompt: say greetings
-    private: false
+  # vars_prompt:
+  # - name: greetings
+  #   prompt: say greetings
+  #   private: false
   tasks:
   - name: greeting 
     # vars:
